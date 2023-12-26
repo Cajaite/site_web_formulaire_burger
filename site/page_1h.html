@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/page_1c.css">
+    <script src="js/page_1j.js" defer></script>
+    <script src="js/formulaire.js" defer></script>
+    <script src="js/menuBurger.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>  
+        <nav class="navbar">
+            <a href="#" class="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="page_2h.html">accueil</a></li>
+                    <li class="active"><a href="#">forum</a></li>               
+                </ul>
+            </div>
+            <img class="bouton" src="image/white-menu-icon.png" alt="menu">       
+        </nav>            
+    </header> 
+    <div id="header"></div>   
+    <main>
+        <form class="formulaire" action=""> 
+            <label for="pseudo">Prenom</label> 
+            <input type="text" id="pseudo" required> 
+            <label for="mail">Mail</label> 
+            <input type="email" id="mail" required>
+            <label for="mdp">Mdp</label>
+            <input type="password" name="" id="mdp" required>
+            <input type="color">
+            <fieldset>
+                <legend>General</legend>
+                <select name="" id=""> 
+                    <option value="Joueur">Joueur</option>
+                    <option value="Visiteur">Visiteur</option> 
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Genre</legend>
+                <label for="f">Femme</label>
+                <input type="radio" name="genre" id="f"> <!-- bouton rond-->
+                <label for="h">Homme</label>
+                <input type="radio" name="genre" id="h"> <!--si on donne le meme "name" au deux boutons radio, si on en coche un, l'autre se decoche, sinon, on peut cocher les deux-->
+            </fieldset>
+            <fieldset>
+                <legend>Niveaux joueurs</legend>
+                <label for="de">debutant</label>
+                <input type="checkbox" name="" id="">
+                <label for="int">intermediaire</label>
+                <input type="checkbox" name="" id="poi">
+                <label for="p">pro</label>
+                <input type="checkbox" name="" id="f">
+            </fieldset>
+            <p class="erreur"></p>
+            <input type="reset">
+            <input type="submit">
+        </form> 
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="image/image.png" alt=""></div>
+              <div class="swiper-slide"><img src="image/téléchargé (1).jpg" alt=""></div>
+              <div class="swiper-slide"><img src="image/téléchargé.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <footer>
+        <img class="twitter" src="image/Twitter_2012_logo.svg.png" alt="logo twitter">
+        <img class="insta" src="image/Instagram_icon.png" alt="insta">
+        <img class="youtube" src="image/580b57fcd9996e24bc43c545.png" alt="youtube">                          
+    </footer>           
+</body>
+<script>
+    
+</script>
+</html>
